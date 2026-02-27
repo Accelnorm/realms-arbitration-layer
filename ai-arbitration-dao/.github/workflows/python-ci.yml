@@ -1,0 +1,28 @@
+name: ai-arbitration-dao-ci
+
+on:
+  pull_request:
+    paths:
+      - "ai-arbitration-dao/**"
+  push:
+    branches: [main]
+    paths:
+      - "ai-arbitration-dao/**"
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ai-arbitration-dao
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v4
+      - name: Install dependencies
+        run: uv sync --extra dev
+      - name: Lint
+        run: uv run ruff check src tests
+      - name: Typecheck
+        run: uv run mypy src
+      - name: Test
+        run: uv run pytest -q

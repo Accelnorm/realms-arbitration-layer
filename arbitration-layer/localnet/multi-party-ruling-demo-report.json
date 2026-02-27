@@ -1,0 +1,29 @@
+{
+  "timestamp": 1772222094,
+  "rpcUrl": "http://127.0.0.1:8899",
+  "status": "ok",
+  "mode": "multi-party-simulation",
+  "flow": {
+    "payoutIndex": 61,
+    "queuedPayout": "8zZRY8cbk5SDzPpyuyvY2AwvEA7ENf8LdN7QaVP3yCMB",
+    "challenge": "EioDKp4ahWnRDrqqxc38aLfo6Q3XErYn2FRXAAJEc24G",
+    "bondVault": "FyMm8BLFzxXznmA8ATJ5wpPj4FX5C8gekgMUXtXKYYu8",
+    "humanVotes": [
+      "Deny",
+      "Allow",
+      "Deny"
+    ],
+    "aiVotes": [
+      "Allow",
+      "Deny"
+    ],
+    "humanMajorityOutcome": "Deny",
+    "aiMajorityOutcome": "Deny",
+    "finalSafeTreasuryOutcome": "Deny"
+  },
+  "nextSteps": [
+    "Replace simulated votes with real wallet-signed human arbitrator ballots",
+    "Replace simulated AI votes with seat attestation + governance proof records",
+    "Record and verify proposal-proof mode on-chain before record_ruling"
+  ]
+}

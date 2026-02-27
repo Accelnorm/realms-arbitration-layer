@@ -1,0 +1,18 @@
+[Unit]
+Description=AI Arbitration DAO Seat Worker (%i)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=%i
+WorkingDirectory=/opt/ai-arbitration-dao
+EnvironmentFile=/etc/ai-arbitration-dao/%i.env
+ExecStart=/usr/bin/env uv run python -m ai_arbitration_dao.runtime.worker
+Restart=always
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

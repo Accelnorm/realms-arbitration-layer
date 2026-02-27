@@ -1,0 +1,10 @@
+{
+  "safe": "REPLACE_WITH_SAFE_ACCOUNT_PUBKEY",
+  "safePolicy": "REPLACE_WITH_SAFE_POLICY_PUBKEY",
+  "authority": "REPLACE_WITH_POLICY_AUTHORITY_PUBKEY",
+  "resolver": "REPLACE_WITH_RESOLVER_PUBKEY",
+  "challengeBondLamports": 10000000,
+  "disputeWindowSeconds": 86400,
+  "eligibilityMint": "REPLACE_WITH_TEST_DAO_CHALLENGE_TOKEN_MINT",
+  "minTokenBalance": 1
+}

@@ -1,0 +1,13 @@
+{
+  "queuedPayout": {
+    "payout": "REPLACE_WITH_QUEUED_PAYOUT_ACCOUNT_PUBKEY",
+    "safe": "REPLACE_WITH_SAFE_ACCOUNT_PUBKEY",
+    "safePolicy": "REPLACE_WITH_SAFE_POLICY_PUBKEY",
+    "payoutId": "REPLACE_WITH_U64_PAYOUT_ID_AS_STRING",
+    "payoutIndex": 0,
+    "status": "Queued",
+    "assetType": "Native",
+    "recipient": "REPLACE_WITH_RECIPIENT_PUBKEY",
+    "amount": "1000000"
+  }
+}

@@ -1,0 +1,3 @@
+# Certora Solana inlining file (bootstrap)
+# Add program-specific inlining directives as verification coverage grows.
+# Keep file present: Solana prover expects at least one inlining file path.

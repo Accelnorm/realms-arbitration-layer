@@ -1,0 +1,10 @@
+{
+  "safe": "2CQPz54PeYsH8MUVLns833ghrVEBH1WRLy6ZThR8tSBP",
+  "safePolicy": "Fx6icX1ZoPH5GiHbFp3QhCHYWRSmEcH9FSWTsGNFFqKR",
+  "authority": "2CQPz54PeYsH8MUVLns833ghrVEBH1WRLy6ZThR8tSBP",
+  "resolver": "2CQPz54PeYsH8MUVLns833ghrVEBH1WRLy6ZThR8tSBP",
+  "challengeBondLamports": 10000000,
+  "disputeWindowSeconds": 86400,
+  "eligibilityMint": "BVyJBnombh3dv2eASJaJVckciqhYjryRnMeDczqTvZne",
+  "minTokenBalance": 1
+}

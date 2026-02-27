@@ -1,0 +1,44 @@
+[network]
+# Deterministic local testing defaults
+slot_time = 200
+epoch_duration = 432000
+rpc_url = "https://api.devnet.solana.com"
+
+[behavior]
+# Point-fork mode against devnet.
+genesis = false
+point_fork = true
+
+[accounts]
+# Pre-clone token programs from devnet for reliability.
+clone = [
+  "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+  "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+]
+
+[programs]
+# Programs are sourced from devnet in point-fork mode.
+deploy = []
+
+[airdrop]
+# Inject test SOL to keypairs used by local scripts/tests.
+# Keep empty by default; populate with real addresses when ready.
+addresses = []
+amount = 100000000000
+
+# Optional keypair files to auto-airdrop on startup.
+keypair_paths = []
+
+[runbooks]
+default = "deployment"
+unsupervised = false
+
+[studio]
+enabled = true
+port = 18488
+host = "127.0.0.1"
+
+[advanced]
+rpc_port = 8899
+ws_port = 8900
+host = "127.0.0.1"

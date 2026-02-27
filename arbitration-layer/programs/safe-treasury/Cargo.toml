@@ -1,0 +1,40 @@
+[package]
+name = "safe-treasury"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.84"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = ["no-entrypoint"]
+no-entrypoint = []
+idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
+
+[dependencies]
+anchor-lang = "=0.30.1"
+anchor-spl = "=0.30.1"
+solana-program = "=1.18.26"
+# spl-token-2022 is not used directly; Token-2022 paths are blocked at the
+# instruction level (AssetType::Spl2022 returns InvalidAssetConfig).
+# anchor-spl 0.30.1 pulls in the correct transitive version.
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[dev-dependencies]
+litesvm = "=0.2.1"
+solana-program-test = "=1.18.26"
+solana-sdk = "=1.18.26"
+spl-token = "=4.0.0"
+tokio = "=1.49.0"
+anyhow = "=1.0.102"
+
+[package.metadata.certora]
+sources = ["Cargo.toml", "src/**/*.rs"]
+solana_inlining = ["../../certora/summaries/cvlr_inlining_core.txt"]
+solana_summaries = ["../../certora/summaries/cvlr_summaries_core.txt"]

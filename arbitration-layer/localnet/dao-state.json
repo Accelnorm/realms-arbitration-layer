@@ -1,0 +1,19 @@
+{
+  "governanceProgramId": "GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw",
+  "testDao": {
+    "realmName": "TestDAO",
+    "realm": "EPfaFw1wXRv1vVB4BqvPAAxHoBpetiJHAA2JTx6J7J7m",
+    "governance": "4Q6X6sXiqSksBeVg5ViGkVj8RKELDXjKP6uTY46LJBgM",
+    "challengeTokenMint": "BVyJBnombh3dv2eASJaJVckciqhYjryRnMeDczqTvZne"
+  },
+  "aiArbitrationDao": {
+    "realmName": "AIArbitrationDAO",
+    "realm": "rD4byLTnzmy5KmywDrQwmSweqL1ZdmRC5A4VdmKSASN",
+    "governance": "5TQpu6LBP2Wd3gPYBmB6cL8BhTqGHhRAnb6rCjmrN7Ms"
+  },
+  "humanArbitrationDao": {
+    "realmName": "HumanArbitrationDAO",
+    "realm": "HaYB9ogtYKcLbzLkzrXD9eKJxa7L49XHig1oPMjAfCz8",
+    "governance": "EHgZMBWeESb4JcJQ2t1rMTNVuutzSh2SnPWGxgtvSiYL"
+  }
+}

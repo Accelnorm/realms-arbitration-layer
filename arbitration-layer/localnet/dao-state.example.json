@@ -1,0 +1,15 @@
+{
+  "testDao": {
+    "realm": "REPLACE_WITH_TEST_DAO_REALM_PUBKEY",
+    "governance": "REPLACE_WITH_TEST_DAO_GOVERNANCE_PUBKEY",
+    "challengeTokenMint": "REPLACE_WITH_TEST_DAO_CHALLENGE_TOKEN_MINT"
+  },
+  "aiArbitrationDao": {
+    "realm": "REPLACE_WITH_AI_DAO_REALM_PUBKEY",
+    "governance": "REPLACE_WITH_AI_DAO_GOVERNANCE_PUBKEY"
+  },
+  "humanArbitrationDao": {
+    "realm": "REPLACE_WITH_HUMAN_DAO_REALM_PUBKEY",
+    "governance": "REPLACE_WITH_HUMAN_DAO_GOVERNANCE_PUBKEY"
+  }
+}

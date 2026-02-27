@@ -1,0 +1,68 @@
+[
+    {
+        "card_title": "general",
+        "content_type": "COMPLEX",
+        "content": [
+            {
+                "inner_title": "branch",
+                "content_type": "FLAG",
+                "content": "minimax-m2.5-from-scratch",
+                "doc_link": "",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "dirty",
+                "content_type": "FLAG",
+                "content": "true",
+                "doc_link": "",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "revision",
+                "content_type": "FLAG",
+                "content": "1bdfa066f8bfcc218b7abd1dfcd23cdaf71f842f",
+                "doc_link": "",
+                "tooltip": "",
+                "unsound": false
+            }
+        ]
+    },
+    {
+        "card_title": "options",
+        "content_type": "COMPLEX",
+        "content": [
+            {
+                "inner_title": "msg",
+                "content_type": "FLAG",
+                "content": "safe-treasury all current checks.rs rules",
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#msg",
+                "tooltip": "",
+                "unsound": false
+            },
+            {
+                "inner_title": "rule",
+                "content_type": "SIMPLE",
+                "content": [
+                    "rule_asset_type_roundtrip",
+                    "rule_compute_payout_id_is_deterministic",
+                    "rule_compute_queue_payload_hash_is_deterministic",
+                    "rule_compute_ruling_payload_hash_is_deterministic",
+                    "rule_payout_not_releasable_when_challenged_not_finalized",
+                    "rule_payout_not_releasable_when_finalized_deny",
+                    "rule_payout_not_releasable_without_challenge_before_deadline",
+                    "rule_payout_releasable_when_finalized_allow",
+                    "rule_payout_releasable_without_challenge_after_deadline",
+                    "rule_payout_status_roundtrip",
+                    "rule_ruling_outcome_roundtrip",
+                    "rule_treasury_info_helpers_follow_mode_discriminant",
+                    "rule_treasury_mode_roundtrip"
+                ],
+                "doc_link": "https://docs.certora.com/en/latest/docs/prover/cli/options.html#rule",
+                "tooltip": "",
+                "unsound": false
+            }
+        ]
+    }
+]

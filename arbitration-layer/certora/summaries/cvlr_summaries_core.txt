@@ -1,0 +1,3 @@
+# Certora Solana summaries file (bootstrap)
+# Add summaries for external/library calls to reduce state space and improve convergence.
+# Keep file present: Solana prover expects at least one summaries file path.

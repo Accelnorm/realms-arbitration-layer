@@ -1,0 +1,121 @@
+[demo] repo root:     /home/user/solana/realms-arbitration-layer
+[demo] rpc:           http://127.0.0.1:8899
+[demo] safe-treasury: 9yMpZraAc4pFvg4DXTT3rhvUvdh2xGQUdiNLQ1bwEhCD
+[demo] governance:    GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw
+
+[demo] validator healthy at http://127.0.0.1:8899
+[demo] bootstrapping three DAOs (TestDAO, AIArbitrationDAO, HumanArbitrationDAO)
+Using governance program: GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw
+Verifying governance program is accessible on http://127.0.0.1:8899...
+Governance program GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw confirmed.
+Wrote DAO bootstrap state: /home/user/solana/realms-arbitration-layer/arbitration-layer/localnet/dao-state.json
+{
+  "governanceProgramId": "GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw",
+  "testDao": {
+    "realmName": "TestDAO",
+    "realm": "EPfaFw1wXRv1vVB4BqvPAAxHoBpetiJHAA2JTx6J7J7m",
+    "governance": "4Q6X6sXiqSksBeVg5ViGkVj8RKELDXjKP6uTY46LJBgM",
+    "challengeTokenMint": "3veMBaZSdmi47fJDG9PAHUaewAYGBRfwNX1zMKtR1dRw"
+  },
+  "aiArbitrationDao": {
+    "realmName": "AIArbitrationDAO",
+    "realm": "rD4byLTnzmy5KmywDrQwmSweqL1ZdmRC5A4VdmKSASN",
+    "governance": "5TQpu6LBP2Wd3gPYBmB6cL8BhTqGHhRAnb6rCjmrN7Ms"
+  },
+  "humanArbitrationDao": {
+    "realmName": "HumanArbitrationDAO",
+    "realm": "HaYB9ogtYKcLbzLkzrXD9eKJxa7L49XHig1oPMjAfCz8",
+    "governance": "EHgZMBWeESb4JcJQ2t1rMTNVuutzSh2SnPWGxgtvSiYL"
+  }
+}
+[demo] seeding UI fixtures
+Wrote fixture files:
+- /home/user/solana/realms-arbitration-layer/arbitration-layer/localnet/dao-state.json
+- /home/user/solana/realms-arbitration-layer/arbitration-layer/localnet/safe-policy-state.json
+- /home/user/solana/realms-arbitration-layer/arbitration-layer/localnet/payout-fixtures.json
+
+Key values:
+challengeTokenMint=BVyJBnombh3dv2eASJaJVckciqhYjryRnMeDczqTvZne
+safePolicy=Fx6icX1ZoPH5GiHbFp3QhCHYWRSmEcH9FSWTsGNFFqKR
+queuedPayout=Cez1HjDP2fdSjzz1s3hq19SJGCDozvqjV9KRZYqoCPJv
+Wrote UI context: /home/user/solana/realms-arbitration-layer/arbitration-layer/localnet/ui-agent-context.json
+{
+  "network": {
+    "cluster": "local-validator",
+    "rpcUrl": "http://127.0.0.1:8899"
+  },
+  "challengePayout": {
+    "challengeTokenMint": "BVyJBnombh3dv2eASJaJVckciqhYjryRnMeDczqTvZne",
+    "safePolicy": "Fx6icX1ZoPH5GiHbFp3QhCHYWRSmEcH9FSWTsGNFFqKR",
+    "queuedPayout": {
+      "payout": "Cez1HjDP2fdSjzz1s3hq19SJGCDozvqjV9KRZYqoCPJv",
+      "safe": "2CQPz54PeYsH8MUVLns833ghrVEBH1WRLy6ZThR8tSBP",
+      "safePolicy": "Fx6icX1ZoPH5GiHbFp3QhCHYWRSmEcH9FSWTsGNFFqKR",
+      "payoutId": "3305289353549404296",
+      "payoutIndex": 0,
+      "status": "Queued",
+      "assetType": "Native",
+      "recipient": "2CQPz54PeYsH8MUVLns833ghrVEBH1WRLy6ZThR8tSBP",
+      "amount": "1000000"
+    }
+  },
+  "sourceFiles": {
+    "daoState": "/home/user/solana/realms-arbitration-layer/arbitration-layer/localnet/dao-state.json",
+    "safePolicyState": "/home/user/solana/realms-arbitration-layer/arbitration-layer/localnet/safe-policy-state.json",
+    "payoutFixtures": "/home/user/solana/realms-arbitration-layer/arbitration-layer/localnet/payout-fixtures.json"
+  }
+}
+[demo] initializing safe-treasury primitives (bond vault + native vault)
+{
+  "challengeBondVault": "FyMm8BLFzxXznmA8ATJ5wpPj4FX5C8gekgMUXtXKYYu8",
+  "nativeVault": "6fKxq5Qn3Q4C5iNs2zHABvfqQhzH6bPaVzA414BMGRmc",
+  "nativeVaultLamports": 20000000,
+  "targetLamports": "20000000"
+}
+
+[bootstrap-safe-treasury-primitives] complete
+[demo] running human + ai ruling enforcement demo
+[demo] reusing existing localnet deployment + fixtures
+Warning: safe_policy.authority != testDao.governance; using direct authority queue mode on local validator.
+safe_policy.authority=2CQPz54PeYsH8MUVLns833ghrVEBH1WRLy6ZThR8tSBP
+testDao.governance=4Q6X6sXiqSksBeVg5ViGkVj8RKELDXjKP6uTY46LJBgM
+Warning: ai-arbitration-dao CLI unavailable; using local demo stub output for 'create-ruling-proposal'.
+Warning: ai-arbitration-dao CLI unavailable; using local demo stub output for 'submit-vote'.
+Warning: ai-arbitration-dao CLI unavailable; using local demo stub output for 'execute-ruling-proposal'.
+Warning: safe_policy.authority != testDao.governance; using direct authority queue mode on local validator.
+safe_policy.authority=2CQPz54PeYsH8MUVLns833ghrVEBH1WRLy6ZThR8tSBP
+testDao.governance=4Q6X6sXiqSksBeVg5ViGkVj8RKELDXjKP6uTY46LJBgM
+[demo] complete
+- Human case payout: 2vmSS6xxbf6oj82tJucnTVAobfYpRUZwunHQxJdD2afs
+- AI case payout: AjDD7DpNMnypSUMEJhZR3kr5YFs2LUY1pvPKpnTp3hum
+- Report: /home/user/solana/realms-arbitration-layer/arbitration-layer/localnet/human-ai-ruling-demo-report.json
+[demo] running multi-party scaffold demo
+[multi-demo] queueing payout via governance
+Warning: safe_policy.authority != testDao.governance; using direct authority queue mode on local validator.
+safe_policy.authority=2CQPz54PeYsH8MUVLns833ghrVEBH1WRLy6ZThR8tSBP
+testDao.governance=4Q6X6sXiqSksBeVg5ViGkVj8RKELDXjKP6uTY46LJBgM
+[multi-demo] human majority=Deny ai majority=Deny final=Deny
+[multi-demo] complete
+- queued payout: 8zZRY8cbk5SDzPpyuyvY2AwvEA7ENf8LdN7QaVP3yCMB
+- payout index: 8
+- final outcome: Deny
+- report: /home/user/solana/realms-arbitration-layer/arbitration-layer/localnet/multi-party-ruling-demo-report.json
+
+================================================================
+[demo] SUCCESS
+================================================================
+
+Artifacts:
+  DAO state:        /home/user/solana/realms-arbitration-layer/arbitration-layer/localnet/dao-state.json
+  Safe policy:      /home/user/solana/realms-arbitration-layer/arbitration-layer/localnet/safe-policy-state.json
+  Payout fixtures:  /home/user/solana/realms-arbitration-layer/arbitration-layer/localnet/payout-fixtures.json
+  UI context:       /home/user/solana/realms-arbitration-layer/arbitration-layer/localnet/ui-agent-context.json
+  Human/AI report:  /home/user/solana/realms-arbitration-layer/arbitration-layer/localnet/human-ai-ruling-demo-report.json
+  Multi-party:      /home/user/solana/realms-arbitration-layer/arbitration-layer/localnet/multi-party-ruling-demo-report.json
+
+To start the governance UI:
+  npm --prefix /home/user/solana/realms-arbitration-layer/governance-ui run dev
+
+UI will be available at http://localhost:3000
+Realms governance program: GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw
+Safe-treasury program:     9yMpZraAc4pFvg4DXTT3rhvUvdh2xGQUdiNLQ1bwEhCD

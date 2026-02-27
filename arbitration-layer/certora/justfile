@@ -1,0 +1,10 @@
+set shell := ["bash", "-cu"]
+
+smoke:
+    bash ./scripts/run-certora.sh conf/Smoke.conf
+
+core:
+    bash ./scripts/run-certora.sh conf/Core.conf
+
+all:
+    bash ./scripts/run-certora.sh conf/AllRules.conf

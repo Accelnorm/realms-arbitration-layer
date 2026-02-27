@@ -1,0 +1,17 @@
+---
+name: arbitration-layer
+id: arbitration-layer
+runbooks:
+  - name: deployment
+    id: deployment
+    description: Placeholder deployment runbook for local Surfpool startup
+    location: runbooks/deployment.tx
+environments:
+  localnet:
+    svm_network_id: localnet
+    svm_api_url: http://127.0.0.1:8899
+    deployer_keypair_json: ~/.config/solana/id.json
+  devnet:
+    svm_network_id: devnet
+    svm_api_url: https://api.devnet.solana.com
+    deployer_keypair_json: ~/.config/solana/id.json

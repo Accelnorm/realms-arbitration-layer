@@ -1,0 +1,26 @@
+{
+  "network": {
+    "cluster": "local-validator",
+    "rpcUrl": "http://127.0.0.1:8899"
+  },
+  "challengePayout": {
+    "challengeTokenMint": "BVyJBnombh3dv2eASJaJVckciqhYjryRnMeDczqTvZne",
+    "safePolicy": "Fx6icX1ZoPH5GiHbFp3QhCHYWRSmEcH9FSWTsGNFFqKR",
+    "queuedPayout": {
+      "payout": "Cez1HjDP2fdSjzz1s3hq19SJGCDozvqjV9KRZYqoCPJv",
+      "safe": "2CQPz54PeYsH8MUVLns833ghrVEBH1WRLy6ZThR8tSBP",
+      "safePolicy": "Fx6icX1ZoPH5GiHbFp3QhCHYWRSmEcH9FSWTsGNFFqKR",
+      "payoutId": "3305289353549404296",
+      "payoutIndex": 0,
+      "status": "Queued",
+      "assetType": "Native",
+      "recipient": "2CQPz54PeYsH8MUVLns833ghrVEBH1WRLy6ZThR8tSBP",
+      "amount": "1000000"
+    }
+  },
+  "sourceFiles": {
+    "daoState": "/home/user/solana/realms-arbitration-layer/arbitration-layer/localnet/dao-state.json",
+    "safePolicyState": "/home/user/solana/realms-arbitration-layer/arbitration-layer/localnet/safe-policy-state.json",
+    "payoutFixtures": "/home/user/solana/realms-arbitration-layer/arbitration-layer/localnet/payout-fixtures.json"
+  }
+}
